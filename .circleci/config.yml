@@ -17,9 +17,9 @@ jobs:
       - run:
           name: "install 1dependencies"
           command: |
-            python3 -m venv venv
+            python -m venv venv
             . venv/Scripts/activate
-            python3 install -r requirements.txt
+            python install -r requirements.txt
       - run:
           name: "run tests"
           command: |
